@@ -6,7 +6,7 @@ replicaCount: 2
 
 image:
   repository: djaga91/demo-java-app
-  tag: "V1.0"
+  tag: "V2.2"
   pullPolicy: IfNotPresent
   
 appName: demo-java-app
