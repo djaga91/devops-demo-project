@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Demo Spring Boot App</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Demo App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         body {
+            margin: 0;
             height: 100vh;
             background: linear-gradient(135deg, #6e45e2, #88d3ce);
             display: flex;
@@ -50,7 +51,7 @@
 </head>
 <body>
 
-<div class="container fade-in">
+<div class="container fade-in" style="background-color: rgba(0, 0, 0, 0.4); padding: 2rem; border-radius: 15px;">
     <h1 class="slide-down" th:text="${title}">Default title.</h1>
     <p th:text="${msg}" class="mt-4">Default text.</p>
 </div>
