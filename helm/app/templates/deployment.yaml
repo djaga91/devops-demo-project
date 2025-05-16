@@ -16,7 +16,8 @@ spec:
         app: {{ .Values.appName }}
     spec:
       containers:
-      - name: {{ .Values.appName }}
-        image: {{ .Values.image.githubID }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
-        ports:
-        - containerPort: 8080
+        - name: {{ .Values.appName }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 8080
